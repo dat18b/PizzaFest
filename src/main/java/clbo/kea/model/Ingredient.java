@@ -16,4 +16,7 @@ public class Ingredient {
     @ManyToOne
     private Recipe recipe;
 
+    @OneToOne(cascade = CascadeType.ALL)
+    private UnitOfMeasure uom;
+
 }
